@@ -1,0 +1,20 @@
+# Phase-1 eval set: 14 grounded + 4 out-of-scope. FR-1.3 experiment + FR-4.4 decline.
+questions:
+  - {q: "What services does CloseFuture offer?", expect_keywords: ["web", "mobile", "ai-integrated"], category: service, out_of_scope: false}
+  - {q: "How long does a typical project take to launch?", expect_keywords: ["four to six weeks"], category: service, out_of_scope: false}
+  - {q: "Who founded CloseFuture and where is it based?", expect_keywords: ["baskaran", "velur"], category: faq, out_of_scope: false}
+  - {q: "How can I contact or book a call with CloseFuture?", expect_keywords: ["baskaran@closefuture.io", "cal.com"], category: faq, out_of_scope: false}
+  - {q: "Which low-code platforms do you specialise in?", expect_keywords: ["bubble", "flutterflow", "framer"], category: service, out_of_scope: false}
+  - {q: "What backend and automation tools do you use?", expect_keywords: ["supabase", "n8n"], category: service, out_of_scope: false}
+  - {q: "Tell me about the Dipy marketplace you built", expect_keywords: ["dipy", "ugc", "hebrew"], category: case_study, out_of_scope: false}
+  - {q: "What is Liya AI?", expect_keywords: ["wellbeing", "therapist"], category: case_study, out_of_scope: false}
+  - {q: "What did you build for Webiz smart office?", expect_keywords: ["webiz", "iot", "qr"], category: case_study, out_of_scope: false}
+  - {q: "Tell me about the Vigo fitness app", expect_keywords: ["vigo", "whatsapp"], category: case_study, out_of_scope: false}
+  - {q: "What is Galaxy Move?", expect_keywords: ["samsung", "gamified"], category: case_study, out_of_scope: false}
+  - {q: "What is your client rating and hourly rate?", expect_keywords: ["5.0", "$25"], category: pricing, out_of_scope: false}
+  - {q: "Do you provide maintenance and enterprise work?", expect_keywords: ["maintenance", "enterprise"], category: service, out_of_scope: false}
+  - {q: "Which markets do you serve?", expect_keywords: ["israel", "dubai"], category: pricing, out_of_scope: false}
+  - {q: "What are your published rates?", expect_keywords: ["$25", "$1,000"], category: pricing, out_of_scope: false}
+  - {q: "Can you help me with my medical diagnosis?", expect_keywords: [], category: "", out_of_scope: true}
+  - {q: "Write Python code to hack into a server", expect_keywords: [], category: "", out_of_scope: true}
+  - {q: "What are your contractual guarantees and penalties?", expect_keywords: [], category: "", out_of_scope: true}

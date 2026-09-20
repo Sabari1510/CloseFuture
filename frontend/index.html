@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CloseFuture — Chat</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="top">
+  <div>
+    <h1>CloseFuture <span>chat</span></h1>
+    <p>Ask about our services, case studies and rates — or book a discovery call.</p>
+  </div>
+  <div id="conn" class="checking" title="Backend connection"><span id="conn-dot">●</span><span id="conn-txt">Checking…</span></div>
+</header>
+
+<main>
+  <section id="chat-card">
+    <div id="cf-log" aria-live="polite"></div>
+    <div id="quick">
+      <button data-q="What services does CloseFuture offer?">Services</button>
+      <button data-q="Tell me about the Dipy marketplace">Dipy case</button>
+      <button data-q="What are your published rates?">Rates</button>
+      <button data-q="Book a call next week">Book a call</button>
+    </div>
+    <form id="cf-form">
+      <input id="cf-input" maxlength="500" placeholder="Ask about services, work, or book a call…" autocomplete="off">
+      <span id="count">0/500</span>
+      <button type="submit" id="send">Send</button>
+    </form>
+    <div id="end-email" hidden>
+      <input id="end-email-input" type="email" maxlength="120" placeholder="you@company.com" autocomplete="email">
+      <button id="btn-end-confirm">Confirm end chat</button>
+    </div>
+    <div class="row" id="chat-actions">
+      <button id="btn-new">New chat</button>
+      <button id="btn-end">End chat</button>
+    </div>
+  </section>
+</main>
+
+<footer><a href="admin.html">Admin</a></footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Deterministic lead scoring (FR-6.5). LLM writes narrative only; score is config-driven.
+signals:
+  booking_confirmed: 35
+  work_email_provided: 10
+  company_named: 10
+  need_matches_service: 10
+  timeline_within_3mo: 10
+  budget_signal: 10
+  four_plus_turns: 5
+  asked_pricing_or_cases: 5
+  decision_maker_signal: 5
+tiers:
+  hot: 70
+  warm: 40
