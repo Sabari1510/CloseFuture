@@ -4,7 +4,7 @@ setup:
 	pip install -e ".[dev]" 2>NUL || pip install -e .
 
 db-up:
-	docker run -d --name pgtest -e POSTGRES_PASSWORD=postgres -p 5433:5432 pgvector/pgvector:pg16
+	docker run -d --name pgtest -e POSTGRES_PASSWORD=PASS -p 5433:5432 pgvector/pgvector:pg16
 
 migrate:
 	python scripts/migrate.py
